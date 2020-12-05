@@ -7,10 +7,35 @@
     tools:context=".Time">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="なんか文字を表示するよ"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="164dp" />
+        android:layout_marginStart="451dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="451dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/date"
+        android:textAlignment="center"
+        android:textSize="69sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textSize="69sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
 </androidx.constraintlayout.widget.ConstraintLayout>
