@@ -3,6 +3,11 @@ plugins {
     id 'kotlin-android'
 }
 
+// Load secretProperties
+def secretPropertiesFile = rootProject.file("secret.properties");
+def secretProperties = new Properties()
+secretProperties.load(new FileInputStream(secretPropertiesFile))
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -13,7 +18,9 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        manifestPlaceholders = [
+                open_weather_map_api_key: secretProperties["openWeatherMapApiKey"]
+        ]
     }
 
     buildTypes {
@@ -31,4 +38,5 @@ dependencies {
     implementation 'androidx.leanback:leanback:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
