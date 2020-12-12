@@ -80,13 +80,8 @@ class Time : Activity() {
                     findViewById<TextView>(R.id.currentWeather).text = currentWeatherDescription
 
                     // 現在の気温
-                    val currentTemp = current.getString("temp")
+                    val currentTemp = current.getString("feels_like")
                     findViewById<TextView>(R.id.currentTemp).text = "$currentTemp°"
-
-
-                    // 湿度
-                    val currentHumidity = current.getString("humidity")
-                    findViewById<TextView>(R.id.currentHumidity).text = "湿度$currentHumidity%"
                 })
             })
         }

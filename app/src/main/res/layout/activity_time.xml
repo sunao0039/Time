@@ -70,13 +70,13 @@
         android:layout_height="wrap_content"
         android:text="20°"
         android:textAlignment="viewStart"
-        android:textSize="36sp"
+        android:textSize="56sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toEndOf="@+id/currentWeatherIcon"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <TextView
         android:id="@+id/currentWeather"
@@ -91,20 +91,6 @@
         app:layout_constraintStart_toEndOf="@+id/currentWeatherIcon"
         app:layout_constraintTop_toBottomOf="@+id/currentTemp"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/currentHumidity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="湿度50%"
-        android:textAlignment="viewStart"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toEndOf="@+id/currentWeatherIcon"
-        app:layout_constraintTop_toBottomOf="@+id/currentWeather"
-        app:layout_constraintVertical_bias="0.003" />
 
     <TextView
         android:id="@+id/textView"
