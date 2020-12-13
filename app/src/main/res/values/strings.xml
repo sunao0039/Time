@@ -3,4 +3,5 @@
     <string name="date_format">yyyy/MM/dd(E)</string>
     <string name="time_format">kk:mm:ss</string>
     <string name="weather_title">WEATHER</string>
+    <string name="schedule_title">TODAY\'S SCHEDULE</string>
 </resources>
