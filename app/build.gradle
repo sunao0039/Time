@@ -19,7 +19,9 @@ android {
         versionCode 1
         versionName "1.0"
         manifestPlaceholders = [
-                open_weather_map_api_key: secretProperties["openWeatherMapApiKey"]
+                open_weather_map_api_key: secretProperties["openWeatherMapApiKey"],
+                time_tree_api_key: secretProperties["timeTreeApiKey"],
+                time_tree_calendar_id: secretProperties["timeTreeCalendarId"]
         ]
     }
 
@@ -39,4 +41,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }

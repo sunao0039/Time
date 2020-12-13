@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textDate"
@@ -79,6 +79,21 @@
         app:layout_constraintVertical_bias="0.192" />
 
     <TextView
+        android:id="@+id/todaySchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="TODAY'S SCHEDULE"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTime"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
         android:id="@+id/currentWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,5 +118,17 @@
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/textTime"
         app:layout_constraintTop_toTopOf="@+id/textDate" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/schedulesView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backGround"
+        app:layout_constraintEnd_toEndOf="@+id/backGround"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/backGround"
+        app:layout_constraintTop_toBottomOf="@+id/todaySchedule"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

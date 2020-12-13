@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <meta-data android:name="openWeatherMapApiKey" android:value="${open_weather_map_api_key}"/>
+        <meta-data android:name="timeTreeApiKey" android:value="${time_tree_api_key}"/>
+        <meta-data android:name="timeTreeCalendarId" android:value="${time_tree_calendar_id}"/>
     </application>
 
 </manifest>
