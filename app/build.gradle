@@ -3,10 +3,10 @@ plugins {
     id 'kotlin-android'
 }
 
-// Load secretProperties
-def secretPropertiesFile = rootProject.file("secret.properties");
-def secretProperties = new Properties()
-secretProperties.load(new FileInputStream(secretPropertiesFile))
+// Load localProperties
+def localPropertiesFile = rootProject.file("local.properties");
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(localPropertiesFile))
 
 android {
     compileSdkVersion 30
@@ -19,9 +19,9 @@ android {
         versionCode 1
         versionName "1.0"
         manifestPlaceholders = [
-                open_weather_map_api_key: secretProperties["openWeatherMapApiKey"],
-                time_tree_api_key: secretProperties["timeTreeApiKey"],
-                time_tree_calendar_id: secretProperties["timeTreeCalendarId"]
+                open_weather_map_api_key: localProperties["openWeatherMapApiKey"],
+                time_tree_api_key: localProperties["timeTreeApiKey"],
+                time_tree_calendar_id: localProperties["timeTreeCalendarId"]
         ]
     }
 
