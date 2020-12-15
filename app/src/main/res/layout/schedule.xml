@@ -6,13 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingHorizontal="42dp"
-    android:paddingVertical="10dp">
+    android:paddingVertical="10dp"
+    android:focusable="true">
 
     <TextView
         android:id="@+id/startTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textColor="#BCB8B1"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -24,7 +26,8 @@
         android:id="@+id/endTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textColor="#BCB8B1"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -35,8 +38,8 @@
     <View
         android:id="@+id/verticalLine"
         android:layout_width="3dp"
-        android:layout_height="36sp"
-        android:background="@android:color/background_light"
+        android:layout_height="34sp"
+        android:background="#E0CA3C"
         android:layout_marginVertical="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +52,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="viewStart"
-        android:textSize="30sp"
+        android:textColor="#BCB8B1"
+        android:textSize="28sp"
         android:layout_marginLeft="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
