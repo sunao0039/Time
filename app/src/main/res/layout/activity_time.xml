@@ -113,10 +113,10 @@
         android:layout_width="982dp"
         android:layout_height="204dp"
         android:layout_marginVertical="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/backGround"
-        app:layout_constraintEnd_toEndOf="@+id/backGround"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/backGround"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/todaySchedule"
         app:layout_constraintVertical_bias="0.558" />
 
