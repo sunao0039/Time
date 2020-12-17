@@ -1,4 +1,4 @@
-package com.example.time
+package io.github.kazenomachi.time
 
 import android.content.Context
 import android.view.LayoutInflater
